@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; font-family: Inter, Arial, sans-serif; color: #172033; background: #f3f5f9; }
+body { margin: 0; }
+.container { width: min(760px, calc(100% - 28px)); margin: 32px auto; }
+.panel { background: #fff; border: 1px solid #e5e9f0; border-radius: 18px; padding: clamp(18px, 4vw, 30px); box-shadow: 0 12px 36px rgba(23,32,51,.07); }
+.eyebrow { color: #5367d9; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: .75rem; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); margin: .3rem 0 .6rem; }
+h2 { font-size: 1.1rem; margin: 0 0 10px; }
+.muted { color: #667085; }
+.small { font-size: .85rem; }
+#reader { width: 100%; max-width: 620px; margin: 22px auto 12px; overflow: hidden; border: 1px solid #dce2eb; border-radius: 12px; }
+.status { background: #f3f5f9; border-radius: 9px; padding: 12px; font-size: .94rem; }
+.result { margin-top: 18px; padding: 16px; border: 1px solid #b8e8cd; background: #effcf4; border-radius: 12px; }
+.result-value { overflow-wrap: anywhere; white-space: pre-wrap; }
+button { border: 0; border-radius: 9px; padding: 11px 15px; font: inherit; font-weight: 650; color: white; background: #3448c5; cursor: pointer; min-height: 42px; }
+button:hover { filter: brightness(.95); }
+.button-muted { background: #667085; }
+.manual-form { margin-top: 24px; }
+.manual-form label { display: block; font-weight: 650; margin-bottom: 8px; }
+.manual-row { display: flex; gap: 8px; }
+input { width: 100%; min-width: 0; padding: 11px 12px; border: 1px solid #cfd5df; border-radius: 9px; font: inherit; }
+.history { margin-top: 28px; }
+.history-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+#historyList { padding-left: 25px; }
+#historyList li { padding: 10px 0; border-bottom: 1px solid #edf0f5; overflow-wrap: anywhere; }
+.scan-time { display: block; font-size: .78rem; color: #667085; margin-top: 4px; }
+footer { text-align: center; padding: 16px; font-size: .82rem; color: #667085; }
+[hidden] { display: none !important; }
+@media (max-width: 460px) { .manual-row { flex-direction: column; } .manual-row button { width: 100%; } }
